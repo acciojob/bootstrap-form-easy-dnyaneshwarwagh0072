@@ -1,2 +1,88 @@
+.form-container>h1 {
+    margin-bottom: 5%;
+    text-align: center;
+    min-width: 630px;
+}
 
-/* Your CSS Code here. */
+.form-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.grad-year {
+    display: block;
+}
+
+.name-mail {
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.mb-3 {
+    width: 30%;
+}
+
+.clg-yr-roll {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clg {
+    width: 50%;
+}
+
+.clg-yr-roll>.ab {
+    width: 20%;
+}
+
+.grad-year {
+    margin-top: -0.5rem;
+    width: 100%;
+}
+
+#graduation-year {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .name-mail{
+        display: flex;
+        flex-direction: column;
+    }
+    .clg-yr-roll{
+        display: flex;
+        flex-direction: column;
+    }
+    .mb-3{
+        width: 100%;
+    }
+
+  }
+  
