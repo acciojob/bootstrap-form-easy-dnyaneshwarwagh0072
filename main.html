@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	       <div class="title">
+	<div class="title">
         <h1>InternShip Form</h1>
     </div>
     <div class="main-container">
@@ -16,21 +16,21 @@
             <div class="first-row">
                 <div class="col-4" id="first-name-input">
                     <label for="">First Name</label>
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" required>
                 </div>
                 <div class="col-4" id="last-name-input">
                     <label for="">Last Name</label>
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Last Name" required>
                 </div>
                 <div class="col-4" id="email-input">
                     <label for="">Email Address</label>
-                    <input type="email" placeholder="@gmail.com">
+                    <input type="email" placeholder="@gmail.com" required>
                 </div>
             </div>
             <div class="second-row">
                 <div class="col-6" id="college-input">
                     <label for="">College</label>
-                    <input type="text" placeholder="College Name">
+                    <input type="text" placeholder="College Name" required>
                 </div>
                 <div class="col-3">
                     <label for="">Graduation Year</label>
@@ -42,13 +42,13 @@
                         <option class="col-3" value="2023">2023</option>
                     </select>
                 </div>
-                <div class="col-3" id="roll-no-input">
-                    <label for="">Roll No</label>
-                    <input type="number" name="" id="">
+                <div class="col-3">
+                    <label for="roll-no-input">Roll No</label>
+                    <input type="number" name="" id="roll-no-input" required>
                 </div>
             </div>
             <div class="checkbox-container" id="conditions-checkbox">
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="" required>
                 <label for="">Agree to terms and conditions</label>
             </div>
             <button type="button" class="btn btn-primary">Submit form</button>
