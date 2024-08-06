@@ -1,89 +1,57 @@
-.form-container>h1 {
-    margin-bottom: 5%;
-    text-align: center;
-    min-width: 630px;
-}
-
-.form-container {
-    width: 90%;
-    margin: auto;
-    margin-top: 5%;
-}
-
-.grad-year {
-    display: block;
-}
-
-.name-mail {
-    /* margin-top: 5%; */
-    display: flex;
-    justify-content: space-between;
-}
-
-.mb-3 {
-    width: 30%;
-}
-
-.clg-yr-roll {
-    display: flex;
-    justify-content: space-between;
-}
-
-.clg {
-    width: 50%;
-}
-
-.clg-yr-roll>.ab {
-    width: 20%;
-}
-
-.grad-year {
+body {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.first-row input,
+.second-row input {
     width: 100%;
 }
 
-#graduation-year {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--bs-body-color);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: var(--bs-body-bg);
-    background-clip: padding-box;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+.col-4,
+.col-6,
+.col-3 {
+    padding: 5px 10px;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  
-    .container {
-      width: 100%;
-      padding: 10px;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .name-mail{
-        display: flex;
-        flex-direction: column;
-    }
-    .clg-yr-roll{
-        display: flex;
-        flex-direction: column;
-    }
-    .mb-3{
-        width: 100%;
-    }
+.col-3 {
+    display: flex;
+    flex-direction: column;
+}
 
-  }
-  
+.col-3>select {
+    width: auto;
+    height: 30px;
+}
+
+.first-row,
+.second-row {
+    display: flex;
+}
+
+.choose {
+    padding: 3px;
+    color: #757575;
+}
+
+.first-row {
+    margin-top: 30px;
+}
+
+.second-row {
+    margin-top: 20px;
+}
+
+.checkbox-container {
+    padding: 5px 10px;
+}
+
+.btn-primary {
+    margin: 10px;
+}

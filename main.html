@@ -8,57 +8,50 @@
 </head>
 
 <body>
-	    <div class="container mt-5">
-        <form class="needs-validation" novalidate>
-            <div class="form-group">
-                <label for="first-name-input">First Name</label>
-                <input type="text" class="form-control" id="first-name-input" required>
-                <div class="invalid-feedback">
+	       <div class="title">
+        <h1>InternShip Form</h1>
+    </div>
+    <div class="main-container">
+        <form action="" class="form-container">
+            <div class="first-row">
+                <div class="col-4" id="first-name-input">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="col-4" id="last-name-input">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="col-4" id="email-input">
+                    <label for="">Email Address</label>
+                    <input type="email" placeholder="@gmail.com">
                 </div>
             </div>
-            <div class="form-group">
-                <label for="last-name-input">Last Name</label>
-                <input type="text" class="form-control" id="last-name-input" required>
-                <div class="invalid-feedback">
+            <div class="second-row">
+                <div class="col-6" id="college-input">
+                    <label for="">College</label>
+                    <input type="text" placeholder="College Name">
+                </div>
+                <div class="col-3">
+                    <label for="">Graduation Year</label>
+                    <select class="col-3 choose" name="graduation-year" id="graduation-year">
+                        <option class="col-3" value="choose">Choose...</option>
+                        <option class="col-3" value="2020">2020</option>
+                        <option class="col-3" value="2021">2021</option>
+                        <option class="col-3" value="2022">2022</option>
+                        <option class="col-3" value="2023">2023</option>
+                    </select>
+                </div>
+                <div class="col-3" id="roll-no-input">
+                    <label for="">Roll No</label>
+                    <input type="number" name="" id="">
                 </div>
             </div>
-            <div class="form-group">
-                <label for="email-input">Email Address</label>
-                <input type="email" class="form-control" id="email-input" required>
-                <div class="invalid-feedback">
-                </div>
+            <div class="checkbox-container" id="conditions-checkbox">
+                <input type="checkbox" name="" id="">
+                <label for="">Agree to terms and conditions</label>
             </div>
-            <div class="form-group">
-                <label for="college-input">College</label>
-                <input type="text" class="form-control" id="college-input" required>
-                <div class="invalid-feedback">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="roll-no-input">Roll No</label>
-                <input type="text" class="form-control" id="roll-no-input" required>
-                <div class="invalid-feedback">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="graduation-year">Graduation Year</label>
-                <select class="form-control" id="graduation-year" required>
-                    <option value="">Select year</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                </select>
-                <div class="invalid-feedback">
-                </div>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
-                <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
-                <div class="invalid-feedback">
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary mt-3">Submit Form</button>
+            <button type="button" class="btn btn-primary">Submit form</button>
         </form>
     </div>
     <script type="text/javascript" src="./script.js">
